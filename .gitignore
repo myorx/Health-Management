@@ -1,0 +1,14 @@
+# Local data and build output
+data.db
+*.db-journal
+*.db-shm
+*.db-wal
+**/target/
+**/out/
+
+# IDE and operating-system files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AnnualReport">
+   <children>
+      <ImageView fx:id="Picture3" fitHeight="400.0" fitWidth="207.0" layoutX="410.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@QQ图片20240111200459.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="Label1" layoutX="40.0" layoutY="25.0" text="叮咚！年度报告已送达~">
+         <font>
+            <Font name="Segoe UI Semilight Italic" size="23.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="ReadTextArea" layoutX="25.0" layoutY="106.0" prefHeight="200.0" prefWidth="332.0" />
+      <ImageView fx:id="Picture1" fitHeight="176.0" fitWidth="235.0" layoutX="363.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@QQ图片20240111200511.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Picture2" fitHeight="91.0" fitWidth="122.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@007W54Uggy1hlnr1zzucej34944944qp.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="Progress" layoutX="211.0" layoutY="59.0" mnemonicParsing="false" onAction="#OnProgress" prefHeight="34.0" prefWidth="89.0" text="点击获取~" />
+      <ProgressBar fx:id="ProgressBar" layoutX="139.0" layoutY="345.0" prefWidth="200.0" progress="0.0" />
+      <TextField fx:id="yearEntry" layoutX="46.0" layoutY="65.0" promptText="请输入年份：" />
+   </children>
+</AnchorPane>

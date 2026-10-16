@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="637.0" style="-fx-background-color: #defe99;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ManageStage">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="278.0" layoutY="24.0" prefHeight="29.0" prefWidth="82.0" text="用户信息">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="dataTableView" layoutX="34.0" layoutY="68.0" prefHeight="376.0" prefWidth="566.0">
+         <columns>
+            <TableColumn fx:id="personColumn" maxWidth="1000.0" prefWidth="403.33332443237305" text="用户名" />
+            <TableColumn fx:id="inquire" prefWidth="162.00003051757812" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="665.0" style="-fx-background-color: #90ee90;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AnalyseStageMore">
+   <children>
+      <ImageView fitHeight="461.0" fitWidth="646.0" layoutX="10.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@微信图片_20240111190911.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="14.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="健康数据分析" wrappingWidth="171.4830722808838">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Button layoutX="21.0" layoutY="54.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="98.0" text="健康数据">
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <Button fx:id="height" mnemonicParsing="false" onAction="#onHeight" text="身高" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <Button fx:id="weight" mnemonicParsing="false" onAction="#onWeight" text="体重" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <Button fx:id="BMI" mnemonicParsing="false" onAction="#onBMI" text="BMI" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <Button fx:id="sleepTime" mnemonicParsing="false" onAction="#onSleep" text="睡眠" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <Button fx:id="step" mnemonicParsing="false" onAction="#onStep" text="步数" />
+                     </graphic>
+                  </MenuItem>
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </Button>
+      <TextField fx:id="year" layoutX="38.0" layoutY="414.0" prefHeight="23.0" prefWidth="50.0" />
+      <TextField fx:id="month" layoutX="123.0" layoutY="414.0" prefHeight="23.0" prefWidth="31.0" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="年份" />
+      <Text fill="WHITE" layoutX="98.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="月份" />
+      <Pane fx:id="basicPane" layoutX="154.0" layoutY="52.0" prefHeight="386.0" prefWidth="495.0" style="-fx-background-color: #f0fff0;" />
+   </children>
+</Pane>

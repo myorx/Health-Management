@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AdminStage">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #90ee90;">
+         <children>
+            <Pane layoutX="33.0" layoutY="31.0" prefHeight="338.0" prefWidth="391.0" style="-fx-background-color: #f0fff0;">
+               <children>
+                  <ImageView fitHeight="348.0" fitWidth="391.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@QQ图片20231229093414.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="95.0" prefHeight="79.0" prefWidth="347.0" style="-fx-background-color: #ffffbb;" text="管理员界面" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Arc layoutX="67.0" layoutY="302.0" length="270.0" opacity="0.76" radiusX="70.0" radiusY="50.0" startAngle="315.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeType="OUTSIDE" type="CHORD">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8602522015571594" green="0.9342105388641357" blue="0.44115495681762695" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Arc>
+                  <Button fx:id="Exit" layoutX="27.0" layoutY="283.0" mnemonicParsing="false" onAction="#onExit" prefHeight="45.0" prefWidth="77.0" style="-fx-background-color: #d4e65f;" text="退出" textFill="#444b15">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Button fx:id="manage" layoutX="471.0" layoutY="182.0" mnemonicParsing="false" onAction="#onManage" prefHeight="37.0" prefWidth="89.0" style="-fx-background-color: #a0ee96; -fx-border-color: #ffffff;" text="人员管理">
+               <font>
+                  <Font name="Microsoft Tai Le" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
